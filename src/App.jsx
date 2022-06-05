@@ -1,10 +1,13 @@
 import './App.css';
-import Routes from './Routes';
+import Navigation from "./components/Navigation";
+import Routing from './Routes';
+
 
 function App() {
   return (
     <div className="App">
-      <Routes />
+      <Navigation/>
+      <Routing />
     </div>
   );
 }
