@@ -25,6 +25,16 @@ const BmrCalculator = () => {
           border: "1px solid black",
         }}
       >
+        <Box px={2} py={2} width={"100%"}>
+          <FormControl sx={{ minWidth: 195 }}>
+            <InputLabel id="gender">Gender</InputLabel>
+            <Select label="Gender">
+      
+              <MenuItem value={1}>Male</MenuItem>
+              <MenuItem value={2}>Female</MenuItem>
+            </Select>
+          </FormControl>
+        </Box>
         <Box px={2} py={2}>
           <TextField variant="outlined" label="Height" />
         </Box>
@@ -38,16 +48,15 @@ const BmrCalculator = () => {
           <FormControl sx={{ minWidth: 195 }}>
             <InputLabel id="activityLevel">Activity Level</InputLabel>
             <Select label="Activity Level">
-              <MenuItem value="">
-                <em>None</em>
-              </MenuItem>
-              <MenuItem value={10}>Ten</MenuItem>
-              <MenuItem value={20}>Twenty</MenuItem>
+              <MenuItem value="">Little to no exercise</MenuItem>
+              <MenuItem value={10}>Light exercise</MenuItem>
+              <MenuItem value={20}>mid-regular exercise</MenuItem>
+              <MenuItem value={20}>Frequent, high intensity exercise</MenuItem>
             </Select>
           </FormControl>
         </Box>
         <Box px={2} py={2} width={"100%"}>
-          <Button variant="outlined">CALCULATE</Button>
+          <Button type="submit" variant="outlined">CALCULATE</Button>
         </Box>
         <Box px={2} py={2} width={"100%"}>
           <Typography variant="body1">Your BMR is:</Typography>

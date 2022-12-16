@@ -1,18 +1,14 @@
-import FormControl from "@mui/material/FormControl";
 import { Box } from "@mui/system";
 import { Button } from "@mui/material";
 import { Typography } from "@mui/material";
 import { TextField } from "@mui/material";
 import { useState } from "react";
-import Select from "@mui/material/Select";
-import MenuItem from "@mui/material/MenuItem";
-import InputLabel from "@mui/material/InputLabel";
 
 const BmiCalculator = () => {
   const [formData, setFormData] = useState();
   const [bmi, setBmi] = useState();
 
-  const calculateBMI = () => {};
+  const calculateBmi = () => {};
 
   return (
     <>
@@ -32,10 +28,12 @@ const BmiCalculator = () => {
           <TextField variant="outlined" label="Weight" />
         </Box>
         <Box px={2} py={2} width={"100%"}>
-          <Button variant="outlined">CALCULATE</Button>
+          <Button variant="outlined" onClick={calculateBmi}>CALCULATE</Button>
         </Box>
         <Box px={2} py={2} width={"100%"}>
-          <Typography variant="body1">Your BMI (Body Mass Index) is:</Typography>
+          <Typography variant="body1">
+            Your BMI (Body Mass Index) is: {bmi}
+          </Typography>
         </Box>
       </Box>
     </>

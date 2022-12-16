@@ -3,8 +3,8 @@ import LoginPage from "./views/auth/login";
 import Tools from "./views/tools/index";
 import UserPage from "./views/user";
 import MealTracking from "./views/mealTracking";
-import RecipeTracking from "./views/recipeTracking";
-
+import RecipesPage from "./views/recipes";
+import CommunityPage from "./views/community";
 
 const Routing = () => {
   return (
@@ -13,9 +13,12 @@ const Routing = () => {
       <Route path="/" element={<Tools />}/>
       <Route path="/tools" element={<Tools />}/>
       <Route path="/mealtracker" element={<MealTracking />}/>
-      <Route path="/recipetracker" element={<RecipeTracking />}/>
+      <Route path="/recipes" element={<RecipesPage />}/>
+      <Route path="/recipes/:id" element={<RecipesPage />}/>
       <Route path="/login" element={<LoginPage />}/>
       <Route path="/user/:userid" element={<UserPage />}/>
+      <Route path="/community" element={<CommunityPage />}/>
+
       <Route
       path="*"
       element={

@@ -8,22 +8,23 @@ import Typography from "@mui/material/Typography";
 const Navigation = () => {
   const pages = [
     {
-      title:'Fitness Tools',
-      url: 'tools',
+      title: "Fitness Tools",
+      url: "tools",
     },
     {
-      title:'Meal Tracking',
-      url: 'mealtracker',
+      title: "Meal Tracking",
+      url: "mealtracker",
     },
     {
-      title:'Recipe Tracking',
-      url: 'recipetracker',
+      title: "My Recipes",
+      url: "recipes",
     },
     {
-      title:'Beans',
-      url: 'beans',
+      title: "Community",
+      url: "community",
     },
   ];
+
   return (
     <>
       <Box sx={{ flexGrow: 1 }}>
@@ -56,6 +57,11 @@ const Navigation = () => {
             <Box sx={{ flexGrow: 1 }}>
               {pages.map((page) => (
                 <Typography
+                  className={
+                    window.location.pathname === `/${page.url}`
+                      ? "current"
+                      : null
+                  }
                   variant="p"
                   mx={2}
                   component="a"
@@ -71,6 +77,22 @@ const Navigation = () => {
                 </Typography>
               ))}
             </Box>
+            <Typography
+              variant="p"
+              noWrap
+              component="a"
+              href="/user"
+              mx={2}
+              sx={{
+                fontWeight: 700,
+                letterSpacing: ".1rem",
+                color: "inherit",
+                textDecoration: "none",
+              }}
+              color="inherit"
+            >
+              My account
+            </Typography>
             <Typography
               variant="p"
               noWrap
