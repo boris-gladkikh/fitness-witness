@@ -9,6 +9,13 @@ pt 1 -meal tracker
   - can save favorite meals to enter in future
   -  
 
+  - write meal tracker back end. users/meals/auth
+  - node, express, sequelize?
+  - how to set up local db for sequelize
+  - photo with s3 bucket, eventually - can just link outside first
+  - user auth management on front end with user context (useContext hook)
+  - user backend auth management - firebase? JWT? session? 
+
 
 
 pt 2 - calorie calculator BMR, BMI
@@ -20,7 +27,9 @@ pt 3 - user login, user profile
   - develop auth and session management
   - develop user profile, info
   - calories, meals, fav recipes, bmi, weight, height
-  
+ 
+
+
 
 pt 4 - meal calendar
 - allow seeing breakdown for meals, total cal a day, notes on side, etc

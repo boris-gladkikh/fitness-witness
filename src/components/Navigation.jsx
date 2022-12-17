@@ -19,10 +19,10 @@ const Navigation = () => {
       title: "My Recipes",
       url: "recipes",
     },
-    {
-      title: "Community",
-      url: "community",
-    },
+    // {
+    //   title: "Community",
+    //   url: "community",
+    // },
   ];
 
   return (
