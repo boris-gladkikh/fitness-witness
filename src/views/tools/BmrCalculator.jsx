@@ -26,24 +26,14 @@ const BmrCalculator = () => {
         }}
       >
         <Box px={2} py={2} width={"100%"}>
-          <FormControl sx={{ minWidth: 195 }}>
-            <InputLabel id="gender">Gender</InputLabel>
-            <Select label="Gender">
-      
-              <MenuItem value={1}>Male</MenuItem>
-              <MenuItem value={2}>Female</MenuItem>
-            </Select>
-          </FormControl>
+          <Select size="small" label="Gender">
+            <MenuItem value={1}>Male</MenuItem>
+            <MenuItem value={2}>Female</MenuItem>
+          </Select>
         </Box>
-        <Box px={2} py={2}>
-          <TextField variant="outlined" label="Height" />
-        </Box>
-        <Box px={2} py={2} width={"100%"}>
-          <TextField variant="outlined" label="Weight" />
-        </Box>
-        <Box px={2} py={2} width={"100%"}>
-          <TextField variant="outlined" label="Age" />
-        </Box>
+        <TextField size="small" variant="outlined" label="Height" />
+        <TextField size="small" variant="outlined" label="Weight" />
+        <TextField size="small" variant="outlined" label="Age" />
         <Box px={2} py={2} width={"100%"}>
           <FormControl sx={{ minWidth: 195 }}>
             <InputLabel id="activityLevel">Activity Level</InputLabel>
@@ -56,7 +46,9 @@ const BmrCalculator = () => {
           </FormControl>
         </Box>
         <Box px={2} py={2} width={"100%"}>
-          <Button type="submit" variant="outlined">CALCULATE</Button>
+          <Button type="submit" variant="contained">
+            CALCULATE
+          </Button>
         </Box>
         <Box px={2} py={2} width={"100%"}>
           <Typography variant="body1">Your BMR is:</Typography>

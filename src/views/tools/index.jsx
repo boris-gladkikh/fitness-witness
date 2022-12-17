@@ -29,7 +29,7 @@ const Tools = () => {
             <Typography
               px={2}
               py={2}
-              variant="h6"
+              variant="h4"
               noWrap
               sx={{
                 fontWeight: 700,
@@ -54,7 +54,7 @@ const Tools = () => {
           <Accordion expanded={expandedBmr}>
             <AccordionSummary>
               <Box px={2} py={1} width={"100%"}>
-                <Button variant="outlined" onClick={handleClickBmr}>
+                <Button variant="contained" onClick={handleClickBmr}>
                   {expandedBmr ? "CLOSE BMR" : "CALCULATE BMR"}
                 </Button>
               </Box>
@@ -72,7 +72,7 @@ const Tools = () => {
             <Typography
               px={2}
               py={2}
-              variant="h6"
+              variant="h4"
               noWrap
               sx={{
                 fontWeight: 700,
@@ -111,7 +111,7 @@ const Tools = () => {
           <Accordion expanded={expandedBmi}>
             <AccordionSummary>
               <Box px={2} py={1} width={"100%"}>
-                <Button variant="outlined" onClick={handleClickBmi}>{expandedBmi ? "CLOSE BMI":"CALCULATE BMI"}</Button>
+                <Button variant="contained" onClick={handleClickBmi}>{expandedBmi ? "CLOSE BMI":"CALCULATE BMI"}</Button>
               </Box>
             </AccordionSummary>
             <AccordionDetails>

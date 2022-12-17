@@ -4,7 +4,6 @@ import { Typography } from "@mui/material";
 import { TextField } from "@mui/material";
 import DialogActions from "@mui/material/DialogActions";
 import DialogContent from "@mui/material/DialogContent";
-import DialogContentText from "@mui/material/DialogContentText";
 import DialogTitle from "@mui/material/DialogTitle";
 import { Box } from "@mui/system";
 
@@ -21,7 +20,7 @@ const AddMealDialog = ({ setOpenDialog, openDialog }) => {
           <TextField
             size={"small"}
             sx={{ width: "45%" }}
-            label="Food item"
+            label="Name"
           ></TextField>
           <TextField
             size={"small"}

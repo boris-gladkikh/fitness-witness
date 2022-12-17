@@ -11,7 +11,7 @@ const RecipesPage = () => {
           <Typography
             px={2}
             py={2}
-            variant="h6"
+            variant="h4"
             noWrap
             sx={{
               fontWeight: 700,
@@ -21,10 +21,9 @@ const RecipesPage = () => {
           >
             My Recipes - Coming Soon!
           </Typography>
-          <Box px={2} py={1}>
-
-          <Button variant="outlined">ADD RECIPE</Button>
-          </Box>
+          {/* <Box px={2} py={1}>
+            <Button variant="outlined">ADD RECIPE</Button>
+          </Box> */}
           <Typography variant="body1" px={2} py={1}>
             Browse, view, or edit recipes you have added and saved.
           </Typography>

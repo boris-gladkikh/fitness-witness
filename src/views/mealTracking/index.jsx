@@ -19,7 +19,7 @@ const MealTracking = () => {
       <Paper elevation={3}>
         <MealTracker />
         <Box px={2} py={2} width={"100%"}>
-          <Button variant="outlined" onClick={handleOpenMealDialog}>
+          <Button variant="contained" onClick={handleOpenMealDialog}>
             {openMealDialog ? "CANCEL" : "ADD MEAL"}
           </Button>
         </Box>

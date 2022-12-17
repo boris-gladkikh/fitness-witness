@@ -21,14 +21,38 @@ const BmiCalculator = () => {
           border: "1px solid black",
         }}
       >
-        <Box px={2} py={2}>
-          <TextField variant="outlined" label="Height" />
+        <Box px={2} py={2} display={"flex"} gap="8px" width="50%">
+          <TextField
+            size={"small"}
+            sx={{ width: "80%" }}
+            variant="outlined"
+            label="Height"
+          />
+          <TextField
+            size={"small"}
+            sx={{ width: "20%" }}
+            variant="outlined"
+            label="Units"
+          />
         </Box>
-        <Box px={2} py={2} width={"100%"}>
-          <TextField variant="outlined" label="Weight" />
+        <Box px={2} py={1} display={"flex"} gap="8px" width="50%">
+          <TextField
+            size={"small"}
+            sx={{ width: "80%" }}
+            variant="outlined"
+            label="Weight"
+          />
+          <TextField
+            size={"small"}
+            sx={{ width: "20%" }}
+            variant="outlined"
+            label="Units"
+          />
         </Box>
-        <Box px={2} py={2} width={"100%"}>
-          <Button variant="outlined" onClick={calculateBmi}>CALCULATE</Button>
+        <Box px={2} py={1} width={"100%"}>
+          <Button variant="contained" onClick={calculateBmi}>
+            CALCULATE
+          </Button>
         </Box>
         <Box px={2} py={2} width={"100%"}>
           <Typography variant="body1">
